@@ -47,8 +47,8 @@ public class Settings : MonoBehaviour
         if(!File.Exists(Path.Combine(path, "settings.json")))
         {
             Directory.CreateDirectory(path);
-            File.SetAttributes(Path.Combine(path, "settings.json"), FileAttributes.Normal);
             File.Create(Path.Combine(path, "settings.json")).Dispose();
+            File.SetAttributes(Path.Combine(path, "settings.json"), FileAttributes.Normal);
         }
         using (StreamReader sr = new StreamReader(Path.Combine(path, "settings.json")))
         {

@@ -27,11 +27,13 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D hitbox;
     private bool grounded = false;
     public LayerMask mask;
+    private Inventory inv;
     //private Collider[] childrenColliders;
     // Start is called before the first frame update
     void Start()
     {
         hitbox = GetComponent<BoxCollider2D>();
+        inv = GetComponent<Inventory>();
         // adding all colliders to an array, but our collider will be added to !
         /*childrenColliders = GetComponentsInChildren<Collider>();
 
@@ -168,6 +170,7 @@ public class PlayerController : MonoBehaviour
         //SetHealth(maxHealth);
         //transform.position = spawnpoint.position;
         //no respawn for you
+        inv.Gold = 0;
         SceneManager.LoadScene("mainmenu");
     }
 

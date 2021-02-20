@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\EnemyAttackController.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\HealthbarController.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\MainMenuButtonController.cs" />
     <Compile Include="Assets\Scripts\MathUtils.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />

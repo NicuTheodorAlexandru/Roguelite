@@ -189,6 +189,7 @@ MonoBehaviour:
   colliderRight: {fileID: 1976277768}
   animator: {fileID: 3152557003450408028}
   enemy: {fileID: 3152557003450408029}
+  attacking: 0
   enemySprite: {fileID: 3152557003450408017}
   damageAnimationFrameBegin: 7
   damageAnimationFrameEnd: 8
@@ -343,10 +344,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 3152557003450408028}
   speed: 0.8
+  soulsDropped: 1
+  minGoldDropped: 10
+  maxGoldDropped: 25
   aggroRange: 10
   colliderLeft: {fileID: 344128932}
   colliderRight: {fileID: 1976277768}
   attackRange: 1.7
+  hitbox: {fileID: 3152557003615296399}
 --- !u!95 &3152557003450408028
 Animator:
   serializedVersion: 3

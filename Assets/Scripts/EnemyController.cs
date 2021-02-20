@@ -8,6 +8,9 @@ public class EnemyController : MonoBehaviour
     private int health = 2;
     public Animator animator;
     public float speed = 17;
+    public int soulsDropped;
+    public int minGoldDropped;
+    public int maxGoldDropped;
     public float aggroRange = 10;
     public CollisionBridge colliderLeft;
     public CollisionBridge colliderRight;
@@ -15,6 +18,7 @@ public class EnemyController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rigidbody;
     private Rigidbody2D playerRigidbody;
+    public BoxCollider2D hitbox;
     private bool aggroed = false;
     private int xInput = 0, yInput = 0;
 
@@ -114,6 +118,11 @@ public class EnemyController : MonoBehaviour
             enabled = false;
             colliderRight.gameObject.SetActive(false);
             colliderLeft.gameObject.SetActive(false);
+            hitbox.enabled = false;
+            Inventory inv = GameObject.Find("Player(Clone)").GetComponent<Inventory>();
+            inv.Souls = inv.Souls + soulsDropped;
+            int gold = Random.Range(minGoldDropped, maxGoldDropped);
+            inv.Gold = inv.Gold + gold;
         }
         else
         {
