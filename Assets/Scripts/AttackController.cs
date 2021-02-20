@@ -14,7 +14,6 @@ public class AttackController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(colliderLeft);
         colliderLeft.Initalize(this);
         colliderRight.Initalize(this);
         colliderLeft.enabled = false;

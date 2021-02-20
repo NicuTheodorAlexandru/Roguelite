@@ -347,11 +347,12 @@ MonoBehaviour:
   soulsDropped: 1
   minGoldDropped: 10
   maxGoldDropped: 25
-  aggroRange: 10
+  aggroRange: 7
   colliderLeft: {fileID: 344128932}
   colliderRight: {fileID: 1976277768}
   attackRange: 1.7
   hitbox: {fileID: 3152557003615296399}
+  fov: {x: 40, y: -40}
 --- !u!95 &3152557003450408028
 Animator:
   serializedVersion: 3

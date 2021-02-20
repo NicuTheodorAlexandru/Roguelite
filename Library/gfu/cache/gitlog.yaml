@@ -13,9 +13,267 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2021-02-20T15:20:55.015+02:00
-  initializedAtString: 2021-02-20T12:50:58.989+02:00
+  lastUpdatedAtString: 2021-02-20T19:41:48.701+02:00
+  initializedAtString: 2021-02-20T19:41:48.701+02:00
   log:
+  - commitID: 544f6240c350ca7e4379b67b35412c91705de4e5
+    mergeA: 
+    mergeB: 
+    authorName: Nicu Theodor Alexandru
+    authorEmail: nicu.andru@yahoo.com
+    commitEmail: nicu.andru@yahoo.com
+    commitName: Nicu Theodor Alexandru
+    summary: Added souls and gold. Also a little bugfiing.
+    description: 
+    timeString: 2021-02-20T15:37:39.000+02:00
+    commitTimeString: 2021-02-20T15:37:39.000+02:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\Users\User\Roguelite\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 8ff33f48ece583e896da6a4e9ea15d2976efc54b
+    mergeA: 
+    mergeB: 
+    authorName: Nicu Theodor Alexandru
+    authorEmail: nicu.andru@yahoo.com
+    commitEmail: nicu.andru@yahoo.com
+    commitName: Nicu Theodor Alexandru
+    summary: Added souls and gold. Also a little bugfiing.
+    description: 
+    timeString: 2021-02-20T15:35:49.000+02:00
+    commitTimeString: 2021-02-20T15:35:49.000+02:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\Users\User\Roguelite\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: .vs\Roguelite\v16\.suo
+      fullPath: C:\Users\User\Roguelite\.vs\Roguelite\v16\.suo
+      projectPath: .vs\Roguelite\v16\.suo
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assembly-CSharp.csproj
+      fullPath: C:\Users\User\Roguelite\Assembly-CSharp.csproj
+      projectPath: Assembly-CSharp.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Images\UI\goldcoin.png
+      fullPath: C:\Users\User\Roguelite\Assets\Images\UI\goldcoin.png
+      projectPath: Assets\Images\UI\goldcoin.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Images\UI\goldcoin.png.meta
+      fullPath: C:\Users\User\Roguelite\Assets\Images\UI\goldcoin.png.meta
+      projectPath: Assets\Images\UI\goldcoin.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Images\UI\souls.png
+      fullPath: C:\Users\User\Roguelite\Assets\Images\UI\souls.png
+      projectPath: Assets\Images\UI\souls.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Images\UI\souls.png.meta
+      fullPath: C:\Users\User\Roguelite\Assets\Images\UI\souls.png.meta
+      projectPath: Assets\Images\UI\souls.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Inventory.meta
+      fullPath: C:\Users\User\Roguelite\Assets\Inventory.meta
+      projectPath: Assets\Inventory.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Inventory\inventory.json
+      fullPath: C:\Users\User\Roguelite\Assets\Inventory\inventory.json
+      projectPath: Assets\Inventory\inventory.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Inventory\inventory.json.meta
+      fullPath: C:\Users\User\Roguelite\Assets\Inventory\inventory.json.meta
+      projectPath: Assets\Inventory\inventory.json.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Prefabs\Player.prefab
+      fullPath: C:\Users\User\Roguelite\Assets\Prefabs\Player.prefab
+      projectPath: Assets\Prefabs\Player.prefab
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Prefabs\Skeleton.prefab
+      fullPath: C:\Users\User\Roguelite\Assets\Prefabs\Skeleton.prefab
+      projectPath: Assets\Prefabs\Skeleton.prefab
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scenes\game.unity
+      fullPath: C:\Users\User\Roguelite\Assets\Scenes\game.unity
+      projectPath: Assets\Scenes\game.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\EnemyController.cs
+      fullPath: C:\Users\User\Roguelite\Assets\Scripts\EnemyController.cs
+      projectPath: Assets\Scripts\EnemyController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\Inventory.cs
+      fullPath: C:\Users\User\Roguelite\Assets\Scripts\Inventory.cs
+      projectPath: Assets\Scripts\Inventory.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Inventory.cs.meta
+      fullPath: C:\Users\User\Roguelite\Assets\Scripts\Inventory.cs.meta
+      projectPath: Assets\Scripts\Inventory.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\PlayerController.cs
+      fullPath: C:\Users\User\Roguelite\Assets\Scripts\PlayerController.cs
+      projectPath: Assets\Scripts\PlayerController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\Settings.cs
+      fullPath: C:\Users\User\Roguelite\Assets\Scripts\Settings.cs
+      projectPath: Assets\Scripts\Settings.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ArtifactDB
+      fullPath: C:\Users\User\Roguelite\Library\ArtifactDB
+      projectPath: Library\ArtifactDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\InspectorExpandedItems.asset
+      fullPath: C:\Users\User\Roguelite\Library\InspectorExpandedItems.asset
+      projectPath: Library\InspectorExpandedItems.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: C:\Users\User\Roguelite\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: C:\Users\User\Roguelite\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\SourceAssetDB
+      fullPath: C:\Users\User\Roguelite\Library\SourceAssetDB
+      projectPath: Library\SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\Hierarchy\dfa612-0a70a67c1de0d77469.json
+      fullPath: C:\Users\User\Roguelite\Library\StateCache\Hierarchy\dfa612-0a70a67c1de0d77469.json
+      projectPath: Library\StateCache\Hierarchy\dfa612-0a70a67c1de0d77469.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\Hierarchy\dfa612-aac3b975e1ce823479.json
+      fullPath: C:\Users\User\Roguelite\Library\StateCache\Hierarchy\dfa612-aac3b975e1ce823479.json
+      projectPath: Library\StateCache\Hierarchy\dfa612-aac3b975e1ce823479.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\Hierarchy\dfa612-mainStage.json
+      fullPath: C:\Users\User\Roguelite\Library\StateCache\Hierarchy\dfa612-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\dfa612-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\SceneView\ac1ff6-0a70a67c1de0d77469.json
+      fullPath: C:\Users\User\Roguelite\Library\StateCache\SceneView\ac1ff6-0a70a67c1de0d77469.json
+      projectPath: Library\StateCache\SceneView\ac1ff6-0a70a67c1de0d77469.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\SceneView\ac1ff6-mainStage.json
+      fullPath: C:\Users\User\Roguelite\Library\StateCache\SceneView\ac1ff6-mainStage.json
+      projectPath: Library\StateCache\SceneView\ac1ff6-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gituser.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\gituser.yaml
+      projectPath: Library\gfu\cache\gituser.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: d
+      fullPath: C:\Users\User\Roguelite\d
+      projectPath: d
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      fullPath: C:\Users\User\Roguelite\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: settings.json
+      fullPath: C:\Users\User\Roguelite\settings.json
+      projectPath: settings.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
   - commitID: bbeff3ad64fd5839c8caafae7691af7a539b9e7f
     mergeA: 
     mergeB: 

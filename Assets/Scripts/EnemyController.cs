@@ -20,6 +20,7 @@ public class EnemyController : MonoBehaviour
     private Rigidbody2D playerRigidbody;
     public BoxCollider2D hitbox;
     private bool aggroed = false;
+    public Vector2 fov;
     private int xInput = 0, yInput = 0;
 
     private void Start()
@@ -30,22 +31,84 @@ public class EnemyController : MonoBehaviour
         //Debug.Log(colliderLeft);
     }
 
-    private void Update()
+    private float Forward()
     {
-        if(aggroed)
+        if (spriteRenderer.flipX)
+            return -1.0f;
+        return 1.0f;
+    }
+
+    void Deb()
+    {
+        //float angle = GetAngleTowardPlayer();
+        float x = fov.x;
+        float y = fov.y;
+        if(spriteRenderer.flipX)
         {
-            if(DistanceToPlayer() > aggroRange)
+            x += 180;
+            y -= 180;
+        }
+        //ray 1
+        Quaternion q = Quaternion.AngleAxis(fov.x, Vector3.right);
+        Vector3 ldir = q * rigidbody.transform.forward;
+        Vector3 dir = transform.TransformDirection(ldir);
+        Vector2 d = new Vector2(dir.x, dir.y);
+        d *= aggroRange;
+        d += rigidbody.position;
+        var lDirection = new Vector2(Mathf.Cos(Mathf.Deg2Rad * x), Mathf.Sin(Mathf.Deg2Rad * x)) * aggroRange;
+        Debug.DrawLine(rigidbody.position, rigidbody.position + lDirection, Color.red, 0.1f, false);
+        //ray 2
+        q = Quaternion.AngleAxis(fov.x, Vector3.right);
+        ldir = q * rigidbody.transform.forward;
+        dir = transform.TransformDirection(ldir);
+        d = new Vector2(dir.x, dir.y);
+        d *= aggroRange;
+        d += rigidbody.position;
+        lDirection = new Vector2(Mathf.Cos(Mathf.Deg2Rad * y), Mathf.Sin(Mathf.Deg2Rad * y)) * aggroRange;
+        Debug.DrawLine(rigidbody.position, rigidbody.position + lDirection, Color.red, 0.1f, false);
+        //
+        
+        float angle = GetAngleTowardPlayer();
+        
+        lDirection = new Vector2(Mathf.Cos(Mathf.Deg2Rad * angle), Mathf.Sin(Mathf.Deg2Rad * angle)) * aggroRange;
+        Debug.DrawLine(rigidbody.position, rigidbody.position + lDirection, Color.green, 0.1f, false);
+    }
+
+    private void Aggro()
+    {
+        //Deb();
+        float angle = GetAngleTowardPlayer();
+        float x = fov.x;
+        float y = fov.y;
+        if (spriteRenderer.flipX)
+        {
+            x += 180;
+            y -= 180;
+        }
+        if (aggroed)
+        {
+            /*if (DistanceToPlayer() > aggroRange)
             {
                 aggroed = false;
             }
+            else if(x < angle || y > angle)
+            {
+                aggroed = false;
+            }*/
         }
         else
         {
-            if(DistanceToPlayer() < aggroRange)
+            float yy = playerRigidbody.position.y - rigidbody.position.y;
+            if (DistanceToPlayer() < aggroRange && (x >= angle && y <= angle) && (yy <= 1 && yy >= -1) )
             {
                 aggroed = true;
             }
         }
+    }
+
+    private void Update()
+    {
+        Aggro();
         if(aggroed)
         {
             if (!animator.GetBool("Attacking"))
@@ -140,6 +203,16 @@ public class EnemyController : MonoBehaviour
         {
             Flip();
         }
+    }
+
+    private float GetAngleTowardPlayer()
+    {
+        if (playerRigidbody == null)
+        {
+            playerRigidbody = GameObject.Find("Player(Clone)").GetComponent<Rigidbody2D>();
+            return Mathf.Infinity;
+        }
+        return Vector2.SignedAngle(transform.right, playerRigidbody.position - rigidbody.position);
     }
 
     private float DistanceToPlayer()

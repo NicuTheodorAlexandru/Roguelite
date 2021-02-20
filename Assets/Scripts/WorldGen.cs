@@ -59,7 +59,6 @@ public class WorldGen : MonoBehaviour
                     {
                         Vector3 pp = regionGrid.GetComponent<Grid>().CellToWorld(p);
                         pp.x += offsetX;
-                        Debug.Log(pp);
                         GameObject obj = Instantiate(enemy);
                         obj.transform.position = pp;
                     }
