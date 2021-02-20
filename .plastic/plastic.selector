@@ -1,0 +1,4 @@
+repository "Roguelite@RogueliteTeam@cloud"
+  path "/"
+    br "/main"
+    co "/main"
