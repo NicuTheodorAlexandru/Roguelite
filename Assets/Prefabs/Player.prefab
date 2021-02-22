@@ -251,19 +251,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 5475889116899182919}
-  playerCollider: {fileID: 5475889116899182921}
-  spriteRenderer: {fileID: 5475889116899182917}
-  availableJumps: 2
-  currentJump: 0
-  speed: 17
-  jumpSpeed: 7
-  rigidbody: {fileID: 5475889116899182914}
+  entityCollider: {fileID: 5475889116899182921}
+  hitbox: {fileID: 5525384405213525438}
   health: 100
   maxHealth: 100
-  healthbarController: {fileID: 0}
-  mask:
+  speed: 17
+  jumpSpeed: 7
+  groundLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  availableJumps: 2
 --- !u!212 &5475889116899182917
 SpriteRenderer:
   m_ObjectHideFlags: 0
