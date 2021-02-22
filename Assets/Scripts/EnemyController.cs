@@ -3,11 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : Entity
 {
-    private int health = 2;
-    public Animator animator;
-    public float speed = 17;
     public int soulsDropped;
     public int minGoldDropped;
     public int maxGoldDropped;
@@ -15,18 +12,13 @@ public class EnemyController : MonoBehaviour
     public CollisionBridge colliderLeft;
     public CollisionBridge colliderRight;
     public float attackRange;
-    private SpriteRenderer spriteRenderer;
-    private Rigidbody2D rigidbody;
     private Rigidbody2D playerRigidbody;
-    public BoxCollider2D hitbox;
     private bool aggroed = false;
     public Vector2 fov;
-    private int xInput = 0, yInput = 0;
 
-    private void Start()
+    protected override void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        rigidbody = GetComponent<Rigidbody2D>();
+        base.Start();
         //playerRigidbody = GameObject.Find("Player").GetComponent<Rigidbody2D>();
         //Debug.Log(colliderLeft);
     }
@@ -50,28 +42,28 @@ public class EnemyController : MonoBehaviour
         }
         //ray 1
         Quaternion q = Quaternion.AngleAxis(fov.x, Vector3.right);
-        Vector3 ldir = q * rigidbody.transform.forward;
+        Vector3 ldir = q * entityRigidbody.transform.forward;
         Vector3 dir = transform.TransformDirection(ldir);
         Vector2 d = new Vector2(dir.x, dir.y);
         d *= aggroRange;
-        d += rigidbody.position;
+        d += entityRigidbody.position;
         var lDirection = new Vector2(Mathf.Cos(Mathf.Deg2Rad * x), Mathf.Sin(Mathf.Deg2Rad * x)) * aggroRange;
-        Debug.DrawLine(rigidbody.position, rigidbody.position + lDirection, Color.red, 0.1f, false);
+        Debug.DrawLine(entityRigidbody.position, entityRigidbody.position + lDirection, Color.red, 0.1f, false);
         //ray 2
         q = Quaternion.AngleAxis(fov.x, Vector3.right);
-        ldir = q * rigidbody.transform.forward;
+        ldir = q * entityRigidbody.transform.forward;
         dir = transform.TransformDirection(ldir);
         d = new Vector2(dir.x, dir.y);
         d *= aggroRange;
-        d += rigidbody.position;
+        d += entityRigidbody.position;
         lDirection = new Vector2(Mathf.Cos(Mathf.Deg2Rad * y), Mathf.Sin(Mathf.Deg2Rad * y)) * aggroRange;
-        Debug.DrawLine(rigidbody.position, rigidbody.position + lDirection, Color.red, 0.1f, false);
+        Debug.DrawLine(entityRigidbody.position, entityRigidbody.position + lDirection, Color.red, 0.1f, false);
         //
         
         float angle = GetAngleTowardPlayer();
         
         lDirection = new Vector2(Mathf.Cos(Mathf.Deg2Rad * angle), Mathf.Sin(Mathf.Deg2Rad * angle)) * aggroRange;
-        Debug.DrawLine(rigidbody.position, rigidbody.position + lDirection, Color.green, 0.1f, false);
+        Debug.DrawLine(entityRigidbody.position, entityRigidbody.position + lDirection, Color.green, 0.1f, false);
     }
 
     private void Aggro()
@@ -98,7 +90,7 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            float yy = playerRigidbody.position.y - rigidbody.position.y;
+            float yy = playerRigidbody.position.y - entityRigidbody.position.y;
             if (DistanceToPlayer() < aggroRange && (x >= angle && y <= angle) && (yy <= 1 && yy >= -1) )
             {
                 aggroed = true;
@@ -132,7 +124,7 @@ public class EnemyController : MonoBehaviour
 
     private void MoveTowardPlayer()
     {
-        if (playerRigidbody.position.x > rigidbody.position.x)
+        if (playerRigidbody.position.x > entityRigidbody.position.x)
         {
             xInput = 1;
         }
@@ -147,15 +139,12 @@ public class EnemyController : MonoBehaviour
         animator.SetBool("Attacking", true);
     }
 
-    private void LateUpdate()
+    protected override void FixedUpdate()
     {
-        if(!IsGrounded())
-        {
-            xInput = 0;
-        }
-        Vector2 move = new Vector2(xInput * speed, 0);
-        xInput = yInput = 0;
-        if(move.x == 0)
+        base.FixedUpdate();
+        //Vector2 move = new Vector2(xInput * speed, 0);
+        //xInput = yInput = 0;
+        if(entityRigidbody.velocity.x == 0)
         {
             animator.SetBool("Walking", false);
         }
@@ -163,19 +152,13 @@ public class EnemyController : MonoBehaviour
         {
             animator.SetBool("Walking", true);
         }
-        Move(move);
+        //Move(move);
     }
 
-    private void Move(Vector2 dir)
+    public override void GotAttacked(int damage)
     {
-        dir.y = rigidbody.velocity.y;
-        rigidbody.velocity = dir;
-    }
-
-    public void GotAttacked(int damage)
-    {
-        health -= damage;
-        if (health <= 0)
+        base.GotAttacked(damage);
+        if (Health == 0)
         {
             animator.SetBool("Die", true);
             enabled = false;
@@ -195,11 +178,11 @@ public class EnemyController : MonoBehaviour
 
     private void FaceTowardsPlayer()
     {
-        if(rigidbody.position.x > playerRigidbody.position.x && !spriteRenderer.flipX)
+        if(entityRigidbody.position.x > playerRigidbody.position.x && !spriteRenderer.flipX)
         {
             Flip();
         }
-        else if(rigidbody.position.x < playerRigidbody.position.x && spriteRenderer.flipX)
+        else if(entityRigidbody.position.x < playerRigidbody.position.x && spriteRenderer.flipX)
         {
             Flip();
         }
@@ -212,7 +195,7 @@ public class EnemyController : MonoBehaviour
             playerRigidbody = GameObject.Find("Player(Clone)").GetComponent<Rigidbody2D>();
             return Mathf.Infinity;
         }
-        return Vector2.SignedAngle(transform.right, playerRigidbody.position - rigidbody.position);
+        return Vector2.SignedAngle(transform.right, playerRigidbody.position - entityRigidbody.position);
     }
 
     private float DistanceToPlayer()
@@ -222,31 +205,16 @@ public class EnemyController : MonoBehaviour
             playerRigidbody = GameObject.Find("Player(Clone)").GetComponent<Rigidbody2D>();
             return Mathf.Infinity;
         }
-        Vector2 pos1 = new Vector2(rigidbody.position.x, rigidbody.position.y);
+        Vector2 pos1 = new Vector2(entityRigidbody.position.x, entityRigidbody.position.y);
         Vector2 pos2 = new Vector2(playerRigidbody.position.x, playerRigidbody.position.y);
 
         return Vector2.Distance(pos1, pos2);
     }
 
-    private bool IsGrounded()
+    protected override void Flip()
     {
-        return MathUtils.Equal(rigidbody.velocity.y, 0);
-    }
-
-    private void Flip()
-    {
-        spriteRenderer.flipX = !spriteRenderer.flipX;
+        base.Flip();
         colliderLeft.gameObject.SetActive(colliderLeft.gameObject.activeSelf);
         colliderRight.gameObject.SetActive(colliderRight.gameObject.activeSelf);
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        
-    }
-        
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        
     }
 }

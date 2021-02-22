@@ -343,7 +343,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3152557003450408028}
-  speed: 0.8
+  entityCollider: {fileID: 0}
+  hitbox: {fileID: 3152557003615296399}
+  health: 10
+  maxHealth: 10
+  speed: 100
+  jumpSpeed: 0
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  availableJumps: 1
   soulsDropped: 1
   minGoldDropped: 10
   maxGoldDropped: 25
@@ -351,7 +360,6 @@ MonoBehaviour:
   colliderLeft: {fileID: 344128932}
   colliderRight: {fileID: 1976277768}
   attackRange: 1.7
-  hitbox: {fileID: 3152557003615296399}
   fov: {x: 40, y: -40}
 --- !u!95 &3152557003450408028
 Animator:

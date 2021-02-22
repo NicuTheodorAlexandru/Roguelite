@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\CollisionBridge.cs" />
     <Compile Include="Assets\Scripts\EnemyAttackController.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\Entity.cs" />
     <Compile Include="Assets\Scripts\HealthbarController.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\MainMenuButtonController.cs" />
