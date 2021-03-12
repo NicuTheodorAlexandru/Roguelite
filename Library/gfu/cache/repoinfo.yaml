@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-02-22T16:07:07.348+02:00
-  initializedAtString: 2021-02-22T15:23:51.363+02:00
+  lastUpdatedAtString: 2021-03-12T18:51:19.055+02:00
+  initializedAtString: 2021-03-12T18:51:19.055+02:00
   currentGitRemote:
     name: origin
     url: https://github.com/datPlayerGuy/Roguelite
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: rog-2
-    tracking: 
+    name: master
+    tracking: origin/master
   currentConfigBranch:
-    name: rog-2
+    name: master
     remote:
-      name: 
-      url: 
-    trackingBranch: 
+      name: origin
+      url: https://github.com/datPlayerGuy/Roguelite
+    trackingBranch: master
   currentConfigRemote:
     name: origin
     url: https://github.com/datPlayerGuy/Roguelite

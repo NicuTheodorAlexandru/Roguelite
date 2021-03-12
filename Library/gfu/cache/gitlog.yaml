@@ -13,9 +13,327 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2021-02-22T16:07:08.549+02:00
-  initializedAtString: 2021-02-22T15:23:53.517+02:00
+  lastUpdatedAtString: 2021-03-12T18:51:21.333+02:00
+  initializedAtString: 2021-03-12T18:51:21.333+02:00
   log:
+  - commitID: 1fdd321779cdfc174816a50a8980bcfd85269292
+    mergeA: b437092c0b951ab0010ffd0b5fb5f1f7da032df4
+    mergeB: 19953587f33ac2a979919971050662ee5752b149
+    authorName: datPlayerGuy
+    authorEmail: nicu.andru@yahoo.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Merge pull request #1 from datPlayerGuy/rog-2
+    description: Finished rog-2
+    timeString: 2021-02-22T16:11:12.000+02:00
+    commitTimeString: 2021-02-22T16:11:12.000+02:00
+    changes: []
+  - commitID: 19953587f33ac2a979919971050662ee5752b149
+    mergeA: 
+    mergeB: 
+    authorName: Nicu Theodor Alexandru
+    authorEmail: nicu.andru@yahoo.com
+    commitEmail: nicu.andru@yahoo.com
+    commitName: Nicu Theodor Alexandru
+    summary: Finished rog-2
+    description: 
+    timeString: 2021-02-22T16:09:49.000+02:00
+    commitTimeString: 2021-02-22T16:09:49.000+02:00
+    changes:
+    - path: .vs\Roguelite\v16\.suo
+      fullPath: C:\Users\User\Roguelite\.vs\Roguelite\v16\.suo
+      projectPath: .vs\Roguelite\v16\.suo
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assembly-CSharp.csproj
+      fullPath: C:\Users\User\Roguelite\Assembly-CSharp.csproj
+      projectPath: Assembly-CSharp.csproj
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Inventory\inventory.json
+      fullPath: C:\Users\User\Roguelite\Assets\Inventory\inventory.json
+      projectPath: Assets\Inventory\inventory.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Prefabs\Player.prefab
+      fullPath: C:\Users\User\Roguelite\Assets\Prefabs\Player.prefab
+      projectPath: Assets\Prefabs\Player.prefab
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Prefabs\Skeleton.prefab
+      fullPath: C:\Users\User\Roguelite\Assets\Prefabs\Skeleton.prefab
+      projectPath: Assets\Prefabs\Skeleton.prefab
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\EnemyController.cs
+      fullPath: C:\Users\User\Roguelite\Assets\Scripts\EnemyController.cs
+      projectPath: Assets\Scripts\EnemyController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Assets\Scripts\Entity.cs
+      fullPath: C:\Users\User\Roguelite\Assets\Scripts\Entity.cs
+      projectPath: Assets\Scripts\Entity.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\Entity.cs.meta
+      fullPath: C:\Users\User\Roguelite\Assets\Scripts\Entity.cs.meta
+      projectPath: Assets\Scripts\Entity.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\PlayerController.cs
+      fullPath: C:\Users\User\Roguelite\Assets\Scripts\PlayerController.cs
+      projectPath: Assets\Scripts\PlayerController.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ArtifactDB
+      fullPath: C:\Users\User\Roguelite\Library\ArtifactDB
+      projectPath: Library\ArtifactDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\CurrentLayout-default.dwlt
+      fullPath: C:\Users\User\Roguelite\Library\CurrentLayout-default.dwlt
+      projectPath: Library\CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\InspectorExpandedItems.asset
+      fullPath: C:\Users\User\Roguelite\Library\InspectorExpandedItems.asset
+      projectPath: Library\InspectorExpandedItems.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\LastBuild.buildreport
+      fullPath: C:\Users\User\Roguelite\Library\LastBuild.buildreport
+      projectPath: Library\LastBuild.buildreport
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\LastSceneManagerSetup.txt
+      fullPath: C:\Users\User\Roguelite\Library\LastSceneManagerSetup.txt
+      projectPath: Library\LastSceneManagerSetup.txt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\Managed\Assembly-CSharp.dll
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\Managed\Assembly-CSharp.dll
+      projectPath: Library\PlayerDataCache\Win64\Data\Managed\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.Animation.Runtime.dll
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.Animation.Runtime.dll
+      projectPath: Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.Animation.Runtime.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.Animation.Triangle.Runtime.dll
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.Animation.Triangle.Runtime.dll
+      projectPath: Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.Animation.Triangle.Runtime.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.Common.Runtime.dll
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.Common.Runtime.dll
+      projectPath: Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.Common.Runtime.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.PixelPerfect.dll
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.PixelPerfect.dll
+      projectPath: Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.PixelPerfect.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.SpriteShape.Runtime.dll
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.SpriteShape.Runtime.dll
+      projectPath: Library\PlayerDataCache\Win64\Data\Managed\Unity.2D.SpriteShape.Runtime.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\Managed\Unity.InternalAPIEngineBridge.001.dll
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\Managed\Unity.InternalAPIEngineBridge.001.dll
+      projectPath: Library\PlayerDataCache\Win64\Data\Managed\Unity.InternalAPIEngineBridge.001.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\Managed\Unity.Mathematics.dll
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\Managed\Unity.Mathematics.dll
+      projectPath: Library\PlayerDataCache\Win64\Data\Managed\Unity.Mathematics.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\Managed\Unity.TextMeshPro.dll
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\Managed\Unity.TextMeshPro.dll
+      projectPath: Library\PlayerDataCache\Win64\Data\Managed\Unity.TextMeshPro.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\Managed\Unity.Timeline.dll
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\Managed\Unity.Timeline.dll
+      projectPath: Library\PlayerDataCache\Win64\Data\Managed\Unity.Timeline.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\Managed\UnityEngine.UI.dll
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\Managed\UnityEngine.UI.dll
+      projectPath: Library\PlayerDataCache\Win64\Data\Managed\UnityEngine.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\globalgamemanagers
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\globalgamemanagers
+      projectPath: Library\PlayerDataCache\Win64\Data\globalgamemanagers
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\globalgamemanagers.assets
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\globalgamemanagers.assets
+      projectPath: Library\PlayerDataCache\Win64\Data\globalgamemanagers.assets
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\level0
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\level0
+      projectPath: Library\PlayerDataCache\Win64\Data\level0
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\level1
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\level1
+      projectPath: Library\PlayerDataCache\Win64\Data\level1
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\sharedassets0.assets
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\sharedassets0.assets
+      projectPath: Library\PlayerDataCache\Win64\Data\sharedassets0.assets
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\sharedassets1.assets
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\sharedassets1.assets
+      projectPath: Library\PlayerDataCache\Win64\Data\sharedassets1.assets
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\Data\sharedassets1.assets.resS
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\sharedassets1.assets.resS
+      projectPath: Library\PlayerDataCache\Win64\Data\sharedassets1.assets.resS
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\PlayerDataCache\Win64\ScriptsOnlyCache.yaml
+      fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\ScriptsOnlyCache.yaml
+      projectPath: Library\PlayerDataCache\Win64\ScriptsOnlyCache.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.dll
+      fullPath: C:\Users\User\Roguelite\Library\ScriptAssemblies\Assembly-CSharp.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      fullPath: C:\Users\User\Roguelite\Library\ScriptAssemblies\Assembly-CSharp.pdb
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\SourceAssetDB
+      fullPath: C:\Users\User\Roguelite\Library\SourceAssetDB
+      projectPath: Library\SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\Hierarchy\dfa612-aac3b975e1ce823479.json
+      fullPath: C:\Users\User\Roguelite\Library\StateCache\Hierarchy\dfa612-aac3b975e1ce823479.json
+      projectPath: Library\StateCache\Hierarchy\dfa612-aac3b975e1ce823479.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\Hierarchy\dfa612-mainStage.json
+      fullPath: C:\Users\User\Roguelite\Library\StateCache\Hierarchy\dfa612-mainStage.json
+      projectPath: Library\StateCache\Hierarchy\dfa612-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\StateCache\SceneView\ac1ff6-mainStage.json
+      fullPath: C:\Users\User\Roguelite\Library\StateCache\SceneView\ac1ff6-mainStage.json
+      projectPath: Library\StateCache\SceneView\ac1ff6-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\User\Roguelite\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\shadercompiler-UnityShaderCompiler.exe1.log
+      fullPath: C:\Users\User\Roguelite\Library\shadercompiler-UnityShaderCompiler.exe1.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe1.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Library\shadercompiler-UnityShaderCompiler.exe2.log
+      fullPath: C:\Users\User\Roguelite\Library\shadercompiler-UnityShaderCompiler.exe2.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe2.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ProjectSettings\UnityConnectSettings.asset
+      fullPath: C:\Users\User\Roguelite\ProjectSettings\UnityConnectSettings.asset
+      projectPath: ProjectSettings\UnityConnectSettings.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      fullPath: C:\Users\User\Roguelite\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: b437092c0b951ab0010ffd0b5fb5f1f7da032df4
     mergeA: 
     mergeB: 

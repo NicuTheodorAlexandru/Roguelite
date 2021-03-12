@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-02-22T16:03:48.231+02:00
-  initializedAtString: 2021-02-22T15:23:52.155+02:00
+  lastUpdatedAtString: 2021-03-12T18:55:40.409+02:00
+  initializedAtString: 2021-03-12T18:51:20.144+02:00
   entries:
-  - path: .vs\Roguelite\v16\.suo
-    fullPath: C:\Users\User\Roguelite\.vs\Roguelite\v16\.suo
-    projectPath: .vs\Roguelite\v16\.suo
+  - path: .gitignore
+    fullPath: C:\Users\User\Roguelite\.gitignore
+    projectPath: .gitignore
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Assembly-CSharp.csproj
-    fullPath: C:\Users\User\Roguelite\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
+  - path: .vs\Roguelite\v16\.suo
+    fullPath: C:\Users\User\Roguelite\.vs\Roguelite\v16\.suo
+    projectPath: .vs\Roguelite\v16\.suo
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -34,51 +34,135 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Assets\Prefabs\Player.prefab
-    fullPath: C:\Users\User\Roguelite\Assets\Prefabs\Player.prefab
-    projectPath: Assets\Prefabs\Player.prefab
+  - path: d
+    fullPath: C:\Users\User\Roguelite\d
+    projectPath: d
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\Prefabs\Skeleton.prefab
-    fullPath: C:\Users\User\Roguelite\Assets\Prefabs\Skeleton.prefab
-    projectPath: Assets\Prefabs\Skeleton.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\Scripts\EnemyController.cs
-    fullPath: C:\Users\User\Roguelite\Assets\Scripts\EnemyController.cs
-    projectPath: Assets\Scripts\EnemyController.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Assets\Scripts\Entity.cs
-    fullPath: C:\Users\User\Roguelite\Assets\Scripts\Entity.cs
-    projectPath: Assets\Scripts\Entity.cs
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Scripts\Entity.cs.meta
-    fullPath: C:\Users\User\Roguelite\Assets\Scripts\Entity.cs.meta
-    projectPath: Assets\Scripts\Entity.cs.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: Assets\Scripts\PlayerController.cs
-    fullPath: C:\Users\User\Roguelite\Assets\Scripts\PlayerController.cs
-    projectPath: Assets\Scripts\PlayerController.cs
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    workTreeStatus: 5
   - path: Library\ArtifactDB
     fullPath: C:\Users\User\Roguelite\Library\ArtifactDB
     projectPath: Library\ArtifactDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library\Artifacts\03\038ab1eb0396e714ba6720d2ceb0bd48
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\03\038ab1eb0396e714ba6720d2ceb0bd48
+    projectPath: Library\Artifacts\03\038ab1eb0396e714ba6720d2ceb0bd48
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\2d\2d485ebb4c9c077e4ffabf090953d878
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\2d\2d485ebb4c9c077e4ffabf090953d878
+    projectPath: Library\Artifacts\2d\2d485ebb4c9c077e4ffabf090953d878
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\2e\2eef4ab8ac924a38cbb2268445839ead
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\2e\2eef4ab8ac924a38cbb2268445839ead
+    projectPath: Library\Artifacts\2e\2eef4ab8ac924a38cbb2268445839ead
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\42\42093054f161667794072d390d45900f
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\42\42093054f161667794072d390d45900f
+    projectPath: Library\Artifacts\42\42093054f161667794072d390d45900f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\46\46310d2379fc69c686442f8fcc77287b
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\46\46310d2379fc69c686442f8fcc77287b
+    projectPath: Library\Artifacts\46\46310d2379fc69c686442f8fcc77287b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\4c\4c70eeeeae5c280927dd89b045f9830b
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\4c\4c70eeeeae5c280927dd89b045f9830b
+    projectPath: Library\Artifacts\4c\4c70eeeeae5c280927dd89b045f9830b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\51\517be334cfa833772f6f64c06b4653e5
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\51\517be334cfa833772f6f64c06b4653e5
+    projectPath: Library\Artifacts\51\517be334cfa833772f6f64c06b4653e5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\69\690bc43f61db38163a6467d97c226e2c
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\69\690bc43f61db38163a6467d97c226e2c
+    projectPath: Library\Artifacts\69\690bc43f61db38163a6467d97c226e2c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\71\716a0aa1006858c5ea463a7fe1101ee0
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\71\716a0aa1006858c5ea463a7fe1101ee0
+    projectPath: Library\Artifacts\71\716a0aa1006858c5ea463a7fe1101ee0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\72\7227918d3c9335574af135d3f05dda09
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\72\7227918d3c9335574af135d3f05dda09
+    projectPath: Library\Artifacts\72\7227918d3c9335574af135d3f05dda09
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\72\7288a282dc4d3f8966bbdc960956a174
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\72\7288a282dc4d3f8966bbdc960956a174
+    projectPath: Library\Artifacts\72\7288a282dc4d3f8966bbdc960956a174
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\8a\8a3be1235e90fc750dcdca69fdc1bfca
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\8a\8a3be1235e90fc750dcdca69fdc1bfca
+    projectPath: Library\Artifacts\8a\8a3be1235e90fc750dcdca69fdc1bfca
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\92\927e2f6bad009c224c0f8d8caf0b1e91
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\92\927e2f6bad009c224c0f8d8caf0b1e91
+    projectPath: Library\Artifacts\92\927e2f6bad009c224c0f8d8caf0b1e91
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\9a\9a29d6affc04bf982694ad2deb810caf
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\9a\9a29d6affc04bf982694ad2deb810caf
+    projectPath: Library\Artifacts\9a\9a29d6affc04bf982694ad2deb810caf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\9e\9ecd07d3ff66a1a6dbb44077f6a9bc9f
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\9e\9ecd07d3ff66a1a6dbb44077f6a9bc9f
+    projectPath: Library\Artifacts\9e\9ecd07d3ff66a1a6dbb44077f6a9bc9f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\c5\c570ffad92979ec797debe3d8edaeb48
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\c5\c570ffad92979ec797debe3d8edaeb48
+    projectPath: Library\Artifacts\c5\c570ffad92979ec797debe3d8edaeb48
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\Artifacts\ef\efa8bdab1863f94de0f5bd93a5ca8140
+    fullPath: C:\Users\User\Roguelite\Library\Artifacts\ef\efa8bdab1863f94de0f5bd93a5ca8140
+    projectPath: Library\Artifacts\ef\efa8bdab1863f94de0f5bd93a5ca8140
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Library\CurrentLayout-default.dwlt
     fullPath: C:\Users\User\Roguelite\Library\CurrentLayout-default.dwlt
     projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\EditorInstance.json
+    fullPath: C:\Users\User\Roguelite\Library\EditorInstance.json
+    projectPath: Library\EditorInstance.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\EditorSnapSettings.asset
+    fullPath: C:\Users\User\Roguelite\Library\EditorSnapSettings.asset
+    projectPath: Library\EditorSnapSettings.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -115,12 +199,6 @@ MonoBehaviour:
   - path: Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\User\Roguelite\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\User\Roguelite\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -238,12 +316,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\PlayerDataCache\Win64\Data\sharedassets1.assets.resS
-    fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\Data\sharedassets1.assets.resS
-    projectPath: Library\PlayerDataCache\Win64\Data\sharedassets1.assets.resS
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: Library\PlayerDataCache\Win64\ScriptsOnlyCache.yaml
     fullPath: C:\Users\User\Roguelite\Library\PlayerDataCache\Win64\ScriptsOnlyCache.yaml
     projectPath: Library\PlayerDataCache\Win64\ScriptsOnlyCache.yaml
@@ -262,9 +334,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\User\Roguelite\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
+  - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\User\Roguelite\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -280,39 +352,69 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: Library\shadercompiler-UnityShaderCompiler.exe6.log
+    fullPath: C:\Users\User\Roguelite\Library\shadercompiler-UnityShaderCompiler.exe6.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe6.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: Library\shadercompiler-UnityShaderCompiler.exe7.log
+    fullPath: C:\Users\User\Roguelite\Library\shadercompiler-UnityShaderCompiler.exe7.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe7.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: Library\SourceAssetDB
     fullPath: C:\Users\User\Roguelite\Library\SourceAssetDB
     projectPath: Library\SourceAssetDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\StateCache\Hierarchy\dfa612-aac3b975e1ce823479.json
-    fullPath: C:\Users\User\Roguelite\Library\StateCache\Hierarchy\dfa612-aac3b975e1ce823479.json
-    projectPath: Library\StateCache\Hierarchy\dfa612-aac3b975e1ce823479.json
+  - path: Library\StateCache\Hierarchy\dfa612-c35fcef30744c4b4c9.json
+    fullPath: C:\Users\User\Roguelite\Library\StateCache\Hierarchy\dfa612-c35fcef30744c4b4c9.json
+    projectPath: Library\StateCache\Hierarchy\dfa612-c35fcef30744c4b4c9.json
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
   - path: Library\StateCache\Hierarchy\dfa612-mainStage.json
     fullPath: C:\Users\User\Roguelite\Library\StateCache\Hierarchy\dfa612-mainStage.json
     projectPath: Library\StateCache\Hierarchy\dfa612-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: Library\StateCache\SceneView\ac1ff6-mainStage.json
-    fullPath: C:\Users\User\Roguelite\Library\StateCache\SceneView\ac1ff6-mainStage.json
-    projectPath: Library\StateCache\SceneView\ac1ff6-mainStage.json
+  - path: Library\StateCache\Hierarchy\e82bc1-mainStage.json
+    fullPath: C:\Users\User\Roguelite\Library\StateCache\Hierarchy\e82bc1-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\e82bc1-mainStage.json
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\User\Roguelite\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\StateCache\SceneView\ac1ff6-c35fcef30744c4b4c9.json
+    fullPath: C:\Users\User\Roguelite\Library\StateCache\SceneView\ac1ff6-c35fcef30744c4b4c9.json
+    projectPath: Library\StateCache\SceneView\ac1ff6-c35fcef30744c4b4c9.json
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ProjectSettings\UnityConnectSettings.asset
-    fullPath: C:\Users\User\Roguelite\ProjectSettings\UnityConnectSettings.asset
-    projectPath: ProjectSettings\UnityConnectSettings.asset
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Library\StateCache\SceneView\f8092a-mainStage.json
+    fullPath: C:\Users\User\Roguelite\Library\StateCache\SceneView\f8092a-mainStage.json
+    projectPath: Library\StateCache\SceneView\f8092a-mainStage.json
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: C:\Users\User\Roguelite\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: obj\Debug\Unity.PlasticSCM.Editor.csprojAssemblyReference.cache
+    fullPath: C:\Users\User\Roguelite\obj\Debug\Unity.PlasticSCM.Editor.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Unity.PlasticSCM.Editor.csprojAssemblyReference.cache
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: Temp\UnityLockfile
+    fullPath: C:\Users\User\Roguelite\Temp\UnityLockfile
+    projectPath: Temp\UnityLockfile
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1

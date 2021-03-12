@@ -13,15 +13,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-02-22T16:07:07.368+02:00
-  initializedAtString: 2021-02-22T15:23:52.411+02:00
+  lastUpdatedAtString: 2021-03-12T18:51:20.313+02:00
+  initializedAtString: 2021-03-12T18:51:20.275+02:00
   localBranches:
   - name: master
     tracking: origin/master
   - name: rog-2
-    tracking: 
+    tracking: origin/rog-2
   remoteBranches:
   - name: origin/master
+    tracking: '[None]'
+  - name: origin/rog-2
     tracking: '[None]'
   remotes:
   - name: origin
@@ -43,18 +45,24 @@ MonoBehaviour:
       trackingBranch: master
     - name: rog-2
       remote:
-        name: 
-        url: 
-      trackingBranch: 
+        name: origin
+        url: https://github.com/datPlayerGuy/Roguelite
+      trackingBranch: rog-2
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
       - master
+      - rog-2
     subKeyValues:
     - Values:
       - name: master
+        remote:
+          name: origin
+          url: https://github.com/datPlayerGuy/Roguelite
+        trackingBranch: 
+      - name: rog-2
         remote:
           name: origin
           url: https://github.com/datPlayerGuy/Roguelite
