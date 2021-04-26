@@ -7,6 +7,7 @@ public class WorldGen : MonoBehaviour
 {
     // Start is called before the first frame update
     private Grid levelGrid;
+    public GameObject[] npcs;
     public GameObject spawnGrid;
     public GameObject regionGrid;
     public GameObject enemy;
@@ -20,6 +21,11 @@ public class WorldGen : MonoBehaviour
         levelGrid = GetComponent<Grid>();
         //gen
         GameObject go = Instantiate(spawnGrid, transform);
+        //npc
+        Vector3 pos = transform.position + new Vector3(10, 5, 0);   
+        GameObject npc = Instantiate(npcs[0], transform);
+        npc.transform.position = pos;
+        //world
         go.transform.Find("Tilemap Spawn").GetComponent<Tilemap>().CompressBounds();
         offsetX += go.transform.Find("Tilemap Spawn").GetComponent<Tilemap>().size.x * go.GetComponent<Grid>().cellSize.x;
         int buildings = Random.Range(1, 6);

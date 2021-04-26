@@ -20,11 +20,15 @@ public class PlayerController : Entity
     // Start is called before the first frame update
     protected override void Start()
     {
+        GameObject cam = GameObject.Find("Camera");
+        cam.transform.SetParent(transform, true);
+        //
         base.Start();
         inv = GetComponent<Inventory>();
         GameObject.Find("Background Canvas").GetComponent<Canvas>().worldCamera = GetComponentInChildren<Camera>();
         spawnpoint = GameObject.Find("Spawnpoint").GetComponent<Transform>();
         healthbarController = GameObject.Find("Healthbar Image").GetComponent<HealthbarController>();
+        cam.transform.localPosition = new Vector3(0, 0, -5);
     }
 
     // Update is called once per frame
