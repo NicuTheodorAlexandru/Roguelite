@@ -14,7 +14,7 @@ public class WorldGen : MonoBehaviour
     private float offsetX = 0;
     public Tile wall;
     public Tile background;
-    public Tile decoration;
+    public Tile deco;
 
     void Start()
     {
@@ -40,6 +40,7 @@ public class WorldGen : MonoBehaviour
         GameObject go = Instantiate(regionGrid, transform);
         Tilemap solid = go.transform.Find("Tilemap").GetComponent<Tilemap>();
         Tilemap background = go.transform.Find("Tilemap Background").GetComponent<Tilemap>();
+        Tilemap decoration = go.transform.Find("Tilemap Decoration").GetComponent<Tilemap>();
         Vector3 pos = go.transform.position;
         int roomHeight = 4;
         pos.x += offsetX;
@@ -90,7 +91,12 @@ public class WorldGen : MonoBehaviour
         //gen rooms
         for(int floor = 1; floor <= floors; floor++)
         {
-            for(int i = 3; i < width - 1; i++)
+            int xDeco = Random.Range(3 + 1, width - 2 + 1);
+            int yDeco = Random.Range((floor - 1) * roomHeight + 2, floor * roomHeight - 1 + 1);
+            Debug.Log(((floor - 1) * roomHeight + 2) + "<=" + yDeco + "<=" + (floor * roomHeight - 1));
+            Vector3Int pDeco = new Vector3Int(xDeco, yDeco, 0);
+            decoration.SetTile(pDeco, deco);
+            for (int i = 3; i < width - 1; i++)
             {
                 Vector3Int p = new Vector3Int(i, floor * roomHeight, 0);
                 solid.SetTile(p, wall);
