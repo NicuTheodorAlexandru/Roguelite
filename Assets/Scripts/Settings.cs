@@ -58,7 +58,11 @@ public class Settings : MonoBehaviour
         {
             return;
         }
-        storage = JsonUtility.FromJson<Storage>(json);
+        Storage s = JsonUtility.FromJson<Storage>(json);
+        if(s != null)
+        {
+            storage = s;
+        }
         //apply loaded stuff
         SetMasterVolume(storage.masterVolume);
     }

@@ -361,7 +361,7 @@ MonoBehaviour:
   enemy: {fileID: 3152557003450408018, guid: 0a70a67c1de0d77469a2d8e15896a88b, type: 3}
   wall: {fileID: 11400000, guid: 6613697fc948d274b8d54d3a159d6098, type: 2}
   background: {fileID: 11400000, guid: 8f2d881ad0e39e042b7aba72118623b2, type: 2}
-  decoration: {fileID: 11400000, guid: 19305900817657543b02c4f17bd7a8a1, type: 2}
+  deco: {fileID: 11400000, guid: 88dc2db82d8b1964c98b47c796aef036, type: 2}
 --- !u!114 &188892097
 MonoBehaviour:
   m_ObjectHideFlags: 0
