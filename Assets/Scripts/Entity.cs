@@ -47,6 +47,7 @@ public class Entity : MonoBehaviour
 
     protected virtual void Animation()
     {
+        Debug.Log(IsGrounded());
         if (!IsGrounded())
         {
             if (entityRigidbody.velocity.y > 0)

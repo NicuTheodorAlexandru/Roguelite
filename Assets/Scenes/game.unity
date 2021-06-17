@@ -360,10 +360,12 @@ MonoBehaviour:
     type: 3}
   regionGrid: {fileID: 3405262517037925367, guid: a2541de15fd7e0f4a8132f74c22ca8a2,
     type: 3}
+  bossRoomGrid: {fileID: 2581336945838021646, guid: 5f32fe134efca534794d94c99b51eac8,
+    type: 3}
   enemy: {fileID: 3152557003450408018, guid: 0a70a67c1de0d77469a2d8e15896a88b, type: 3}
   wall: {fileID: 11400000, guid: 6613697fc948d274b8d54d3a159d6098, type: 2}
   background: {fileID: 11400000, guid: 8f2d881ad0e39e042b7aba72118623b2, type: 2}
-  deco: {fileID: 11400000, guid: 88dc2db82d8b1964c98b47c796aef036, type: 2}
+  deco: {fileID: 11400000, guid: 7f8f0a8f2e4b8a1428aaabb2ce614862, type: 2}
 --- !u!114 &188892097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -971,6 +973,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408895001}
   m_CullTransparentMesh: 0
+--- !u!1001 &417953273
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5312050976002743298, guid: b2599568abe8d3e48abb10ae4a20faea,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312050976002743298, guid: b2599568abe8d3e48abb10ae4a20faea,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312050976002743298, guid: b2599568abe8d3e48abb10ae4a20faea,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312050976002743298, guid: b2599568abe8d3e48abb10ae4a20faea,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312050976002743298, guid: b2599568abe8d3e48abb10ae4a20faea,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312050976002743298, guid: b2599568abe8d3e48abb10ae4a20faea,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312050976002743298, guid: b2599568abe8d3e48abb10ae4a20faea,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312050976002743298, guid: b2599568abe8d3e48abb10ae4a20faea,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312050976002743298, guid: b2599568abe8d3e48abb10ae4a20faea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312050976002743298, guid: b2599568abe8d3e48abb10ae4a20faea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312050976002743298, guid: b2599568abe8d3e48abb10ae4a20faea,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5312050976002743301, guid: b2599568abe8d3e48abb10ae4a20faea,
+        type: 3}
+      propertyPath: m_Name
+      value: Grid Spawn
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b2599568abe8d3e48abb10ae4a20faea, type: 3}
 --- !u!1 &480588457
 GameObject:
   m_ObjectHideFlags: 0
