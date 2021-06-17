@@ -10,6 +10,7 @@ public class WorldGen : MonoBehaviour
     public GameObject[] npcs;
     public GameObject spawnGrid;
     public GameObject regionGrid;
+    public GameObject bossRoomGrid;
     public GameObject enemy;
     private float offsetX = 0;
     public Tile wall;
@@ -33,6 +34,10 @@ public class WorldGen : MonoBehaviour
         {
             GenBuilding();
         }
+        //instantiate boss room
+        Vector3 posBossRoom = transform.position + new Vector3(offsetX, 1, 0);
+        GameObject goBossRoom = Instantiate(bossRoomGrid, transform);
+        goBossRoom.transform.position = posBossRoom;
     }
 
     void GenBuilding()
